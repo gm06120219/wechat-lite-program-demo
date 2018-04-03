@@ -1,0 +1,16 @@
+<!--pages/news/index.wxml-->
+<view class='page-body'>
+  <view class='item-wrap' wx:for="{{articles}}" wx:for-item="article" wx:key="id">
+    <!-- 原有方式是直接访问url，增加已读功能后，使用事件处理器跳转 -->
+    <!-- <navigator url='/pages/news-detail/index?id={{article.id}}' open-type='navigate'> -->
+    <!-- </navigator> -->
+    <view class='item {{article.is_read?"readed":""}}' bindtap='goToNewsDetail' data-id='{{article.id}}'>
+      <image src='{{article.news_cover_image_url}}' mode="widthFix"></image>
+      <view class='item-text title'>{{article.news_title}}</view>
+      <view class='item-text introduction'>{{article.news_content_introduction}}</view>
+    </view>
+  </view>
+  <view>
+    <label class='load' loading='{{loading}}' bindtap='loadMore'>{{loadMoreText}}</label>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+/* pages/news-detail/index.wxss */
+
+page {
+  background: #fff;
+  width: 100%;
+}
+
+view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+image {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+text {
+  font-size: 48rpx;
+}
+
+.page-wrap {
+  width: 100%;
+  align-items: left;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.top {
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.body {
+  width: 96%;
+  margin-bottom: 100rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.bottom {
+  width: 100%;
+  margin-bottom: 20rpx;
+  /* TODO 添加内部view在一行 */
+  display: flex;
+  flex-flow: row;
+  white-space: nowrap;
+}
+
+.title {
+  text-align: center;
+  font-size: 56rpx;
+  margin-bottom: 20rpx;
+}
+
+.date {
+  font-size: 14rxp;
+  text-align: right;
+  margin-right: 40rpx;
+}
+
+.content {
+  font-size: 32rpx;
+  text-indent: 64rpx;
+  text-align: left;
+}
+
+.read {
+  text-align: left;
+  font-size: 20rxp;
+}
+
+.like {
+  text-align: right;
+  font-size: 20rxp;
+}

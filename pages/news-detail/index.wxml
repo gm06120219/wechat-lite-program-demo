@@ -1,0 +1,16 @@
+<!--pages/news-detail/index.wxml-->
+<view class='page-wrap'>
+  <view class='top'>
+    <view class='title'>{{article.news_title}}</view>
+    <view class='date'>{{article.news_date}}</view>
+  </view>
+
+  <view class='body'>
+    <view class='content'>{{article.news_content}}</view>
+  </view>
+
+  <view class='bottom'>
+    <view class='read'>阅读量 {{article.news_read_count}}</view>
+    <view class='like'>点赞量 {{article.news_like_count}}</view>
+  </view>
+</view>

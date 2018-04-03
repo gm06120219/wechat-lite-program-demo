@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/news/index",
+    "pages/welcome",
+    "pages/news-detail/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Wechat Lite Demo",
+    "backgroundColor": "#ccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  }
+}

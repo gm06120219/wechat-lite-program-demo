@@ -1,0 +1,9 @@
+<!--welcome.wxml-->
+<view>
+  <text>{{profile.nickName}}</text>
+  <image src='{{profile.avatarUrl}}' mode='widthFix'></image>
+  <button open-type='getUserInfo' bindgetuserinfo='getProfile'>点击获取资料</button>
+  <navigator url='/pages/news/index' open-type='navigate'>
+    <button>查看新闻列表</button>
+  </navigator>  
+</view>
